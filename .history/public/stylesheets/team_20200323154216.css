@@ -1,0 +1,51 @@
+.team_bg{
+    overflow: hidden;
+    width: 900px;
+    height: 1000px;
+    margin: 30px auto;
+	font-size: 26px;
+	background: white;
+	border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+.team_bg p{
+    height: 5px;
+    width: fit-content;
+}
+.team_bg .team_name{
+    margin-top: 62px;
+}
+.team_bg span{
+    font-size: 16px;
+}
+.team_bg .win, .manager{
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #999999;
+}
+#img_logo{
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin: 30px;
+}
+#chartmain{
+    /* border:2px solid #666; */
+    width:33%;
+    margin: 15px;
+    height:240px;
+    float:right;
+}
+.player_table{
+    width: 900px;
+    margin-top: 90px;
+}
+.player_table th{
+    background-color: blue;
+    color: white;
+}
+.player_table td{
+    font-size: 16px;
+}

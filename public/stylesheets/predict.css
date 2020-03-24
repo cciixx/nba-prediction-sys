@@ -1,0 +1,55 @@
+/* CSS Document */
+.bg{
+	width: 500px;
+	height: 380px;
+	margin: 50px auto;
+	font-size: 26px;
+	background: white;
+	border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+.bg h2{
+    text-align: center;
+    border-bottom: 1px solid #999999;
+    padding: 20px;
+    margin: 35px;
+    margin-bottom: 15px;
+}
+.bg textarea {
+    font-size: 20px;
+	height:40px;
+	width:150px;
+	margin-left:20px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #2C3E50;
+}
+.bg input{
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+}
+.bg .box{
+    align-content: center;
+}
+.bg .left-box{
+    font-size: 22px;
+    width: 40%;
+    float: left;
+    margin-left: 30px;
+}
+.bg .right-box{
+    font-size: 22px;
+    width: 40%;
+    float: right;
+    margin-right: 20px;
+}
+.bg img{
+    height: 25px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 25px;
+}

@@ -1,0 +1,44 @@
+/* CSS Document */
+body{
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: 100%, 100%;
+	background-attachment: fixed;
+}
+.header{
+    overflow: hidden;
+}
+.btn{
+	background: #3a59fd;
+	font-family: '方正小标宋简体';
+	color: white;	
+}
+.navl ul{
+	margin: 30px;
+	width: 600px;
+	height: 300px;
+	color: #030303;
+	position: absolute;
+	top: 10px;
+}
+.navl li{
+		height: 29px;
+		width: fit-content;
+		margin: 10px;
+		list-style: none;
+		float: right;
+}
+.navl img{
+	float: left;
+	height: 29px;
+}
+.navl a{
+	margin: 0px 10px;
+	color:#030303;
+	text-align: left;
+	text-decoration: none;
+	font-size: 19px;
+}
+.wrapper{
+    width: 100%;
+}

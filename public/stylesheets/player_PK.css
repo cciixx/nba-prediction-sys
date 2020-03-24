@@ -1,0 +1,23 @@
+
+.bg{
+    overflow: hidden;
+    width: 900px;
+    height: fit-content;
+    margin: 30px auto;
+	font-size: 26px;
+	background: white;
+	border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+.bg .name{
+    margin: 10px;
+    width: 850px;
+    height: fit-content;
+}
+.bg .chart{
+    margin-top: 30px;
+    width: 900px;
+    height: 500px;
+}

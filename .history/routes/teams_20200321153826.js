@@ -1,0 +1,51 @@
+var express = require("express");
+var router = express.Router();
+
+/* GET team page. */
+router.get("/:TeamCode", function(req, res, next) {
+  req.db
+    .from("teams")
+    .select("*")
+    .where({
+      team_code: req.params.TeamCode
+    })
+    .then(rows => {
+      const teamInfo = rows[0];
+      const teamLogoPath = "/images/" + teamInfo.team_code + ".png";
+      const roster = rows[0].roster.split(",");
+      return roster;
+    }).then(roster => {
+      
+      for (let i = 0; i < roster.length; i++) {
+        var suf = "(TW)";
+        var player_name;
+        if (roster[i].includes(suf)) {
+          player_name = roster[i].replace(suf, "").trimEnd();
+        } else {
+          player_name = roster[i];
+        }
+        req.db
+          .from("player_stats")
+          .select(
+            "name",
+            "birth_date",
+            "height",
+            "weight",
+            "position",
+            "game_played",
+            "points",
+            "total_rebounds",
+            "assists",
+            "field_goal_percentage",
+            "three_point_percentage",
+            "free_throw_percentage"
+          )
+          .where({ name: player_name })
+          .then(rows => {
+            console.log(rows[0]);
+          });
+      }
+    })
+});
+
+module.exports = router;
