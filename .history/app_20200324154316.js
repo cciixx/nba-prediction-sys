@@ -95,6 +95,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+console.log(process.env)
+
 // As is customary with HTTPS, just serve the responses on port 443.
 const server = https.createServer(credentials,app);
 server.listen(443); 
