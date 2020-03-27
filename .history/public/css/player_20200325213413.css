@@ -1,0 +1,23 @@
+.player_bg{
+    overflow: hidden;
+    width: 600px;
+    height: fit-content;
+    margin: 30px auto;
+    text-align: center;
+	font-size: 26px;
+	background: white;
+	border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+#p_name{
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+.player_bg .value{
+    font-size: 30px;
+    width: 600px;
+    float: left;
+    height:550px;
+}

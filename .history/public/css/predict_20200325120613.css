@@ -1,0 +1,52 @@
+/* CSS Document */
+.bg{
+	width: 500px;
+	height: 400px;
+	margin: 50px auto;
+	font-size: 26px;
+	background: white;
+	border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+}
+.box{
+    font-size: 22px;
+    width: 40%;
+    float: left;
+    margin-left: 38px;
+}
+h2{
+    text-align: center;
+    border-bottom: 1px solid #999999;
+    padding: 20px;
+    margin: 35px;
+    margin-bottom: 15px;
+}
+h3{
+    margin-left: 20px;
+}
+textarea {
+    font-size: 20px;
+	height:40px;
+	width:150px;
+	margin-left:20px;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #2C3E50;
+}
+input{
+    font-size: 20px;
+    width: 380px;
+    height: 50px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+img{
+    height: 25px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 25px;
+}
