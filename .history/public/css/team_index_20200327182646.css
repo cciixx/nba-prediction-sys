@@ -25,6 +25,7 @@
     width: 26%;
     text-align: center;
     float: left;
+    background-color: transparent;
 }
 .A_team .name_T{
     padding-top: 10px;

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en, zh" s>
+  <head>
+    <meta charset="utf-8" />
+    <title>NBA预测系统-球队信息</title>
+    <link href="/css/navl.css" rel="stylesheet" type="text/css" />
+    <link href="/css/team.css" rel="stylesheet" type="text/css" />
+    <script src="/JS/jquery-3.4.1.js"></script>
+    <script src="/JS/echarts.min.js"></script>
+    <script src="/JS/team.js"></script>
+    <style>
+      body {
+        background-image: url(/images/half_yellow.png);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <main>
+        <ul class="navl">
+          <li><a href="login.html">登 录</a></li>
+          <li><a href="register.html">注 册</a></li>
+          <li><a href="PK_index.html">球员PK</a></li>
+          <li style="border-bottom: 6px solid #3a59fd;">
+            <a href="team.html">球队信息</a>
+          </li>
+          <li><a href="predict.html">赛事预测</a></li>
+          <li><a href="first.html">首 页</a></li>
+          <img src="/images/logo.png" alt="PicassÖ" />
+        </ul>
+      </main>
+    </div>
+
+    <div class="wrapper">
+      <div class="team_bg">
+        <img id="img_logo" alt="team_logo" />
+        <div style="float: left;width: fit-content;">
+          <p class="team_name" , id="t_name"></p>
+          <p>
+            <span class="win" , id="win"></span>
+            <span class="rank" , id="rank"></span>
+          </p>
+          <p>
+            <span class="manager" id="gm"></span>
+            <span class="coach" id="hc"></span>
+          </p>
+        </div>
+
+        <div id="chartmain"></div>
+
+        <div id="player_list">
+          <table id="player_table" ,>
+            <tr>
+              <th class="player center" data-field="name">姓名</th>
+              <th class="player center" data-field="age">生日</th>
+              <th class="player center" data-field="tall">身高</th>
+              <th class="player center" data-field="weight">体重</th>
+              <th class="player center" data-field="position">位置</th>
+              <th class="player center" data-field="times">场数</th>
+              <th class="player center" data-field="score_avg">场均得分</th>
+              <th class="player center" data-field="block">场均篮板</th>
+              <th class="player center" data-field="assistant">场均助攻</th>
+              <th class="player center" data-field="fg">命中率</th>
+              <th class="player center" data-field="name">三分命中率</th>
+              <th class="player center" data-field="name">罚球命中率</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

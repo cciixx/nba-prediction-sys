@@ -13,7 +13,7 @@ $(document).ready(function() {
         $("#title").append(
           "<a href = 'team.html?t_code=" +
             team_code +
-            "' target='_blank'><div class='A_team' style='color: rgb(0, 0, 100); background-color: transparent'><img src='" +
+            "' target='_blank'><div class='A_team' style='background-color: transparent;'><img src='" +
             img_src +
             "' alt = " +
             team_code +
