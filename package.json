@@ -24,5 +24,8 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.2",
     "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "acorn": "^7.1.1"
   }
 }
