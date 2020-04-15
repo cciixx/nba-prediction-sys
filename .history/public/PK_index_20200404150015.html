@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NBA预测系统-球员PK</title>
+    <link  href="css/navl.css" rel="stylesheet" type="text/css">
+    <link  href="css/search.css" rel="stylesheet" type="text/css">
+    <script src="JS/jquery-3.4.1.js"></script>
+    <script src="JS/player_pk.js"></script>
+	<style>
+		body{background-image: url(images/half_yellow.png);}
+	</style>
+</head>
+
+<body>
+    <div class="header">
+        <ul class='navl'style="background-color: blueviolet;">
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li style="border-bottom: 6px solid #3a59fd;"><a href="PK_index.html">球员PK</a></li>
+            <li><a href="team_index.html">球队信息</a></li>
+            <li><a href="live_index.html">赛事模拟</a></li>
+            <li><a href="predict.html">赛事预测</a></li>
+            <li><a href="first.html">首 页</a></li>
+            <img src="images/logo.png", id="logo">
+        </ul>
+    </div>
+    
+    <div class="wrapper">
+        <div class="bg">
+            <h2 style="font-size: 30px;">球员PK</h2>
+            <div style="overflow: hidden;">
+                <div class='box'><h3>球员1 </h3><textarea></textarea></div>
+                <div class='box'><h3>球员2</h3><textarea></textarea></div>
+            </div>
+            <!-- <div style="text-align: center;margin-top: 25px;"><a href="player_PK.html"><input class="btn" type="submit" name="submit" value="K.O."></a></div> 
+            <img src="images/logo.png"> -->
+            <div style="text-align: center;"><input class="btn" type="submit" value="K.O." id="PK"></div> 
+            <img src="images/logo.png", id="logo_b">
+        </div>
+    </div>
+</body>
+</html>
