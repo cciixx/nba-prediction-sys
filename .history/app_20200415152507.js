@@ -25,8 +25,8 @@ var playerTransRouter = require('./routes/player_trans');
 var pkRouter = require('./routes/pk');
 
 // Logging
-var logWrite = require('fs');
-var serverLog = logWrite.createWriteStream('EventLog.log', {flags: 'a'})
+// var logWrite = require('fs');
+// var serverLog = logWrite.createWriteStream('EventLog.log', {flags: 'a'})
 
 // Load the certificate using synchronous call
 const fs = require('fs');
