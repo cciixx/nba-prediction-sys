@@ -30,14 +30,14 @@ var pkRouter = require('./routes/pk');
 // var serverLog = logWrite.createWriteStream('EventLog.log', {flags: 'a'})
 
 // Load the certificate using synchronous call
-// const fs = require('fs');
-// const https = require('https');
-// const privateKey = fs.readFileSync('./sslcert/cert.key','utf8');
-// const certificate = fs.readFileSync('./sslcert/cert.pem','utf8');
-// const credentials = {
-//  key: privateKey,
-//  cert: certificate
-// };
+const fs = require('fs');
+const https = require('https');
+const privateKey = fs.readFileSync('./sslcert/cert.key','utf8');
+const certificate = fs.readFileSync('./sslcert/cert.pem','utf8');
+const credentials = {
+ key: privateKey,
+ cert: certificate
+};
 
 var app = express();
 
@@ -98,12 +98,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-// // As is customary with HTTPS, just serve the responses on port 443.
-// const server = https.createServer(credentials,app);
-// server.listen(443);
-
-
-const server = require('http').createServer();
-const port = process.env.PORT || 3000;
+// As is customary with HTTPS, just serve the responses on port 443.
+const server = https.createServer(credentials,app);
+server.listen(443); 
 
 module.exports = app;

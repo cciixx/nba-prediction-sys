@@ -30,14 +30,14 @@ var pkRouter = require('./routes/pk');
 // var serverLog = logWrite.createWriteStream('EventLog.log', {flags: 'a'})
 
 // Load the certificate using synchronous call
-// const fs = require('fs');
-// const https = require('https');
-// const privateKey = fs.readFileSync('./sslcert/cert.key','utf8');
-// const certificate = fs.readFileSync('./sslcert/cert.pem','utf8');
-// const credentials = {
-//  key: privateKey,
-//  cert: certificate
-// };
+const fs = require('fs');
+const https = require('https');
+const privateKey = fs.readFileSync('./sslcert/cert.key','utf8');
+const certificate = fs.readFileSync('./sslcert/cert.pem','utf8');
+const credentials = {
+ key: privateKey,
+ cert: certificate
+};
 
 var app = express();
 
