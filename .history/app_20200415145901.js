@@ -101,6 +101,6 @@ app.use(function(err, req, res, next) {
 const server = https.createServer(credentials,app);
 const port = process.env.PORT || 3000;
 
-server.listen(port);
+server.listen(port, () => console.log(`Listening on ${port}`)); 
 
 module.exports = app;
