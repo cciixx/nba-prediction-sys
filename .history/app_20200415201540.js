@@ -100,7 +100,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.listen(port, () => console.log(`Listening on ${ PORT }`))
 
 // As is customary with HTTPS, just serve the responses on port 443.
 // const server = https.createServer(credentials,app);

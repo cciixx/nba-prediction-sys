@@ -41,8 +41,6 @@ const fs = require('fs');
 
 var app = express();
 
-const PORT = process.env.PORT || 3000;
-
 // Use helmet
 app.use(helmet());
 
@@ -100,7 +98,7 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.listen(port, )
 
 // As is customary with HTTPS, just serve the responses on port 443.
 // const server = https.createServer(credentials,app);
